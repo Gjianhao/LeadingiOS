@@ -11,15 +11,19 @@
 		0AA4449B260722A60019C53E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4449A260722A60019C53E /* ViewController.swift */; };
 		0AA444A0260722A90019C53E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AA4449F260722A90019C53E /* Assets.xcassets */; };
 		0AA444A3260722A90019C53E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AA444A1260722A90019C53E /* LaunchScreen.storyboard */; };
+		90B5317202EE233351BD7673 /* Pods_JHChatIM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 032A8F8A530EE434A7E0116A /* Pods_JHChatIM.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		032A8F8A530EE434A7E0116A /* Pods_JHChatIM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JHChatIM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA44493260722A60019C53E /* JHChatIM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JHChatIM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA44496260722A60019C53E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AA4449A260722A60019C53E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0AA4449F260722A90019C53E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AA444A2260722A90019C53E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0AA444A4260722A90019C53E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38FE28764886809CF1DBB823 /* Pods-JHChatIM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JHChatIM.debug.xcconfig"; path = "Target Support Files/Pods-JHChatIM/Pods-JHChatIM.debug.xcconfig"; sourceTree = "<group>"; };
+		7603D82079CFC7DA48C8FA98 /* Pods-JHChatIM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JHChatIM.release.xcconfig"; path = "Target Support Files/Pods-JHChatIM/Pods-JHChatIM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90B5317202EE233351BD7673 /* Pods_JHChatIM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +43,8 @@
 			children = (
 				0AA44495260722A60019C53E /* JHChatIM */,
 				0AA44494260722A60019C53E /* Products */,
+				F7CAFFDA06C59D6A1EC77869 /* Pods */,
+				9E0BC38F2D8ADE9457F59587 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +68,24 @@
 			path = JHChatIM;
 			sourceTree = "<group>";
 		};
+		9E0BC38F2D8ADE9457F59587 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				032A8F8A530EE434A7E0116A /* Pods_JHChatIM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7CAFFDA06C59D6A1EC77869 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				38FE28764886809CF1DBB823 /* Pods-JHChatIM.debug.xcconfig */,
+				7603D82079CFC7DA48C8FA98 /* Pods-JHChatIM.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -68,9 +93,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0AA444A7260722A90019C53E /* Build configuration list for PBXNativeTarget "JHChatIM" */;
 			buildPhases = (
+				EE392DEF5E798CDA7EE04104 /* [CP] Check Pods Manifest.lock */,
 				0AA4448F260722A60019C53E /* Sources */,
 				0AA44490260722A60019C53E /* Frameworks */,
 				0AA44491260722A60019C53E /* Resources */,
+				3211A92B36C237390B0BBA64 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +152,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3211A92B36C237390B0BBA64 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JHChatIM/Pods-JHChatIM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JHChatIM/Pods-JHChatIM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JHChatIM/Pods-JHChatIM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE392DEF5E798CDA7EE04104 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JHChatIM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0AA4448F260722A60019C53E /* Sources */ = {
@@ -268,6 +337,7 @@
 		};
 		0AA444A8260722A90019C53E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38FE28764886809CF1DBB823 /* Pods-JHChatIM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -286,6 +356,7 @@
 		};
 		0AA444A9260722A90019C53E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7603D82079CFC7DA48C8FA98 /* Pods-JHChatIM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
