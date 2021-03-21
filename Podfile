@@ -7,4 +7,8 @@ target 'JHChatIM' do
 
   # Pods for JHChatIM
   pod 'AlamofireImage'
+  
+  pod 'TLTabBarController'
+  pod 'TLKit'
+  pod 'ZZFLEX'
 end

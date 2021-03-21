@@ -2,19 +2,107 @@ PODS:
   - Alamofire (5.4.1)
   - AlamofireImage (4.1.0):
     - Alamofire (~> 5.1)
+  - Masonry (1.1.0)
+  - TLKit (0.0.3):
+    - TLKit/TLCategories (= 0.0.3)
+    - TLKit/TLShortcut (= 0.0.3)
+  - TLKit/TLCategories (0.0.3):
+    - TLKit/TLCategories/Foundation (= 0.0.3)
+    - TLKit/TLCategories/UIKit (= 0.0.3)
+  - TLKit/TLCategories/Foundation (0.0.3):
+    - TLKit/TLCategories/Foundation/NSArray (= 0.0.3)
+    - TLKit/TLCategories/Foundation/NSBundle (= 0.0.3)
+    - TLKit/TLCategories/Foundation/NSData (= 0.0.3)
+    - TLKit/TLCategories/Foundation/NSDate (= 0.0.3)
+    - TLKit/TLCategories/Foundation/NSDictionary (= 0.0.3)
+    - TLKit/TLCategories/Foundation/NSFileManager (= 0.0.3)
+    - TLKit/TLCategories/Foundation/NSMutableArray (= 0.0.3)
+    - TLKit/TLCategories/Foundation/NSMutableDictionary (= 0.0.3)
+    - TLKit/TLCategories/Foundation/NSNotificationCenter (= 0.0.3)
+    - TLKit/TLCategories/Foundation/NSObject (= 0.0.3)
+    - TLKit/TLCategories/Foundation/NSString (= 0.0.3)
+    - TLKit/TLCategories/Foundation/NSTimer (= 0.0.3)
+    - TLKit/TLCategories/Foundation/NSURL (= 0.0.3)
+  - TLKit/TLCategories/Foundation/NSArray (0.0.3)
+  - TLKit/TLCategories/Foundation/NSBundle (0.0.3)
+  - TLKit/TLCategories/Foundation/NSData (0.0.3)
+  - TLKit/TLCategories/Foundation/NSDate (0.0.3)
+  - TLKit/TLCategories/Foundation/NSDictionary (0.0.3)
+  - TLKit/TLCategories/Foundation/NSFileManager (0.0.3)
+  - TLKit/TLCategories/Foundation/NSMutableArray (0.0.3)
+  - TLKit/TLCategories/Foundation/NSMutableDictionary (0.0.3)
+  - TLKit/TLCategories/Foundation/NSNotificationCenter (0.0.3)
+  - TLKit/TLCategories/Foundation/NSObject (0.0.3)
+  - TLKit/TLCategories/Foundation/NSString (0.0.3):
+    - TLKit/TLCategories/Foundation/NSData
+  - TLKit/TLCategories/Foundation/NSTimer (0.0.3)
+  - TLKit/TLCategories/Foundation/NSURL (0.0.3)
+  - TLKit/TLCategories/UIKit (0.0.3):
+    - TLKit/TLCategories/UIKit/UIBarButtonItem (= 0.0.3)
+    - TLKit/TLCategories/UIKit/UIButton (= 0.0.3)
+    - TLKit/TLCategories/UIKit/UICollectionViewCell (= 0.0.3)
+    - TLKit/TLCategories/UIKit/UIColor (= 0.0.3)
+    - TLKit/TLCategories/UIKit/UIControl (= 0.0.3)
+    - TLKit/TLCategories/UIKit/UIImage (= 0.0.3)
+    - TLKit/TLCategories/UIKit/UINavigationBar (= 0.0.3)
+    - TLKit/TLCategories/UIKit/UINavigationController (= 0.0.3)
+    - TLKit/TLCategories/UIKit/UINavigationItem (= 0.0.3)
+    - TLKit/TLCategories/UIKit/UIScrollView (= 0.0.3)
+    - TLKit/TLCategories/UIKit/UITextField (= 0.0.3)
+    - TLKit/TLCategories/UIKit/UITextView (= 0.0.3)
+    - TLKit/TLCategories/UIKit/UIView (= 0.0.3)
+    - TLKit/TLCategories/UIKit/UIViewController (= 0.0.3)
+    - TLKit/TLCategories/UIKit/UIWindow (= 0.0.3)
+  - TLKit/TLCategories/UIKit/UIBarButtonItem (0.0.3)
+  - TLKit/TLCategories/UIKit/UIButton (0.0.3):
+    - TLKit/TLCategories/UIKit/UIImage
+  - TLKit/TLCategories/UIKit/UICollectionViewCell (0.0.3)
+  - TLKit/TLCategories/UIKit/UIColor (0.0.3)
+  - TLKit/TLCategories/UIKit/UIControl (0.0.3)
+  - TLKit/TLCategories/UIKit/UIImage (0.0.3)
+  - TLKit/TLCategories/UIKit/UINavigationBar (0.0.3)
+  - TLKit/TLCategories/UIKit/UINavigationController (0.0.3)
+  - TLKit/TLCategories/UIKit/UINavigationItem (0.0.3):
+    - TLKit/TLCategories/UIKit/UIBarButtonItem
+  - TLKit/TLCategories/UIKit/UIScrollView (0.0.3)
+  - TLKit/TLCategories/UIKit/UITextField (0.0.3)
+  - TLKit/TLCategories/UIKit/UITextView (0.0.3)
+  - TLKit/TLCategories/UIKit/UIView (0.0.3):
+    - TLKit/TLCategories/Foundation/NSObject
+    - TLKit/TLShortcut
+  - TLKit/TLCategories/UIKit/UIViewController (0.0.3):
+    - TLKit/TLCategories/UIKit/UIBarButtonItem
+    - TLKit/TLCategories/UIKit/UINavigationController
+    - TLKit/TLCategories/UIKit/UIView
+  - TLKit/TLCategories/UIKit/UIWindow (0.0.3)
+  - TLKit/TLShortcut (0.0.3)
+  - TLTabBarController (0.0.1)
+  - ZZFLEX (1.1):
+    - Masonry
 
 DEPENDENCIES:
   - AlamofireImage
+  - TLKit
+  - TLTabBarController
+  - ZZFLEX
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - AlamofireImage
+    - Masonry
+    - TLKit
+    - TLTabBarController
+    - ZZFLEX
 
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
   AlamofireImage: c4a2ba349885fb3064feb74d2e547bd42ce9be10
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  TLKit: 85bbd71d96639db7f1ca91ca87d06f1a476bd85e
+  TLTabBarController: 149a3df6517408d72e506c4c578b6758744e9251
+  ZZFLEX: 46a7bf6feb0130a2ce265ac72c83991d871cfaee
 
-PODFILE CHECKSUM: 97e93fa08c96d8d51dffccae6a8d3253969114fc
+PODFILE CHECKSUM: 524200937050f7f0adad126de783bfc73088318f
 
 COCOAPODS: 1.10.1
