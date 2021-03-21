@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,8 @@
 		0AA4449B260722A60019C53E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4449A260722A60019C53E /* ViewController.swift */; };
 		0AA444A0260722A90019C53E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AA4449F260722A90019C53E /* Assets.xcassets */; };
 		0AA444A3260722A90019C53E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AA444A1260722A90019C53E /* LaunchScreen.storyboard */; };
+		0AA444B3260731B50019C53E /* JHLaunchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA444B2260731B50019C53E /* JHLaunchManager.swift */; };
+		0AA444B9260731FE0019C53E /* JHSDKManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA444B8260731FE0019C53E /* JHSDKManager.swift */; };
 		90B5317202EE233351BD7673 /* Pods_JHChatIM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 032A8F8A530EE434A7E0116A /* Pods_JHChatIM.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,6 +24,8 @@
 		0AA4449F260722A90019C53E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AA444A2260722A90019C53E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0AA444A4260722A90019C53E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AA444B2260731B50019C53E /* JHLaunchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHLaunchManager.swift; sourceTree = "<group>"; };
+		0AA444B8260731FE0019C53E /* JHSDKManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHSDKManager.swift; sourceTree = "<group>"; };
 		38FE28764886809CF1DBB823 /* Pods-JHChatIM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JHChatIM.debug.xcconfig"; path = "Target Support Files/Pods-JHChatIM/Pods-JHChatIM.debug.xcconfig"; sourceTree = "<group>"; };
 		7603D82079CFC7DA48C8FA98 /* Pods-JHChatIM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JHChatIM.release.xcconfig"; path = "Target Support Files/Pods-JHChatIM/Pods-JHChatIM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -59,13 +63,39 @@
 		0AA44495260722A60019C53E /* JHChatIM */ = {
 			isa = PBXGroup;
 			children = (
-				0AA44496260722A60019C53E /* AppDelegate.swift */,
+				0AA444B6260731C50019C53E /* Modules */,
 				0AA4449A260722A60019C53E /* ViewController.swift */,
 				0AA4449F260722A90019C53E /* Assets.xcassets */,
 				0AA444A1260722A90019C53E /* LaunchScreen.storyboard */,
 				0AA444A4260722A90019C53E /* Info.plist */,
 			);
 			path = JHChatIM;
+			sourceTree = "<group>";
+		};
+		0AA444B1260731820019C53E /* JHLaunchManager */ = {
+			isa = PBXGroup;
+			children = (
+				0AA444B2260731B50019C53E /* JHLaunchManager.swift */,
+			);
+			path = JHLaunchManager;
+			sourceTree = "<group>";
+		};
+		0AA444B6260731C50019C53E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				0AA444B1260731820019C53E /* JHLaunchManager */,
+				0AA444B7260731DE0019C53E /* JHSDKManager */,
+				0AA44496260722A60019C53E /* AppDelegate.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		0AA444B7260731DE0019C53E /* JHSDKManager */ = {
+			isa = PBXGroup;
+			children = (
+				0AA444B8260731FE0019C53E /* JHSDKManager.swift */,
+			);
+			path = JHSDKManager;
 			sourceTree = "<group>";
 		};
 		9E0BC38F2D8ADE9457F59587 /* Frameworks */ = {
@@ -82,7 +112,6 @@
 				38FE28764886809CF1DBB823 /* Pods-JHChatIM.debug.xcconfig */,
 				7603D82079CFC7DA48C8FA98 /* Pods-JHChatIM.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -200,6 +229,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AA444B9260731FE0019C53E /* JHSDKManager.swift in Sources */,
+				0AA444B3260731B50019C53E /* JHLaunchManager.swift in Sources */,
 				0AA4449B260722A60019C53E /* ViewController.swift in Sources */,
 				0AA44497260722A60019C53E /* AppDelegate.swift in Sources */,
 			);
